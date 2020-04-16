@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0 ;
+}
+
+header, main, footer, nav, aside, section, div{
+    display: block;
+}
+
+header{
+    height: 80px;
+
+}
+body{
+    background-color:#171932;
+    color: white;
+    }
+a{
+        color: white;
+        text-decoration: none;
+}
+#logo{
+
+        background-image: url("../images/logo.png");
+        background-repeat: no-repeat;
+        display: block;
+        margin-top:16px;
+        margin-left:16px;
+        width: 48px;
+        height: 48px;
+            }
+#logo span{
+    width: 322px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left:64px;
+    font-family: Carter One;
+    font-size: 40px;
+    align-items: center;
+    color: #FFFFFF;
+    display: flex;
+}
+.photos{
+    display: flex;
+    margin-left: 16px;
+    align-items: center;
+}
+.photos img:not(.image-2){
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 255px;
+    height: 168px;
+}
+.image-2{
+    width: 380px;
+    height: 250px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);    
+}
+.menuTitle{
+    width: 204px;
+    height: 70px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 52px;
+    display: flex;
+    align-items: baseline;
+    text-transform: uppercase;
+    margin-left: 16px;
+    margin-top:16px;
+}
+
+.menuSubTitle{
+    width: 44px;
+    height: 25px;
+    margin-left: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    align-items:baseline;
+    line-height: 52px;
+}
+.section1_list{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.section1_list li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.section1_list li span{
+    margin-left: 16px;
+}
+
+#navigation{
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    list-style-type: none;
+    margin-left: 6px;
+    margin-bottom: 50px;
+    margin-left: 6px;
+
+}
+#navigation li{
+    width: 120px;
+    height: 33px;
+    margin-left: 10px;
+}
+#navigation :not(:last-child){
+    border-right: 1px solid #FFFFFF
+}
+#sectionsList section{
+    font-family: Open Sans;
+    font-style: normal;
+    margin-top: 16px;
+    margin-bottom: 51px;
+    margin-left: 16px;
+}
+
+#sectionsList h1{
+    width: 206px;
+    height: 43px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+#sectionsList p{
+width: 367px;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #FFFFFF;
+}
+
+.menu{
+    display: flex;
+    margin-bottom: 69px;
+}
+.card{
+    background-color:#9B51E0;
+    width: 270px;
+    height: 200px;
+    display: block;
+    margin-left: 16px;
+    border-style: none;
+    box-shadow: 0px 2px 7px rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.image{
+    display: block;
+    width: 270px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.cardLinks{
+    display: flex;
+}
+.cardLinks  a  span{
+    align-items: center;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    width: 109px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.cardLinks  a{
+    margin-top:15px;
+    margin-left: 10px;
+}
+.cardIcons{
+    display: block;
+    margin-top:15px;
+    margin-left: 15px;
+}
+
+footer{
+    background-color:#9B51E0;
+    height: 48px;
+    display: flex;
+}
+.footerIcons{
+    margin-top: 17px;
+    margin-left: 20px;
+    opacity: 0.5
+    
+}
