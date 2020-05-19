@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Ex4-Saar Form</title>
+</head>
+<body>
+    
+        <div class="container">
+            <h1>Saar's Form</h1>
+            <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
+
+        <div class="form-group">
+        <label>Full Name:<input type="text" class="form-control" name="fullName" placeholder="Full Name" required pattern=".*\s.*[a-zA-Z]"></label><br>
+        </div>
+
+        <div class="form-group">
+        <label>Password:<input type="password" class="form-control" name="pass" placeholder="Password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required
+            title="Minimum eight characters, at least one letter, one number and one special character:"></label><br>
+        </div>
+
+        <div class="form-group">
+        <label>Email Address:<input type="email" class="form-control" name="mail" placeholder="Valid Email" required></label><br>
+        </div>
+
+        <div class="form-group">
+        <label>Website:<input type="url" class="form-control" name="website" placeholder="Website"></label><br>
+        </div>
+
+        <div class="form-group">
+        <label>Phone Number:<input type="tel" class="form-control" name="phone" placeholder="Phone Number" pattern="[0-9]{9,10}" ></label><br>
+        </div>
+
+        <div class="form-group">
+        <label>Coffee:<input type="number" class="form-control" name="coffee" placeholder="Favorite Coffee"></label><br>
+        </div>
+
+        <div class="form-group">
+        <label>Temperature:<input type="range" name="temper" min="1" max="10"></label><br>
+        </div>
+
+        <div class="form-group">
+        <label>Address:
+            <textarea name="address" class="form-control" rows="2" cols="30" placeholder="Your Address..."></textarea>
+        </label><br>
+        </div>
+
+        <div class="form-group" id="checkbox_group">
+        <label>Interests:</label><br>
+
+			<span>Reading Books<input type="checkbox" name="interests[]" value="Reading Books"></span>
+			<span>Children<input type="checkbox" name="interests[]" value="children"></span>
+			<span>Sleeping<input type="checkbox" name="interests[]" value="Sleeping"></span>
+			<span>Studying<input type="checkbox" name="interests[]" value="Studying"></span>
+            <span>Cleaning<input type="checkbox" name="interests[]" value="Cleaning"></span>
+            <br>
+        </div>
+
+        <div class="form-group">
+        <label>Gender:</label><br>
+        <span>Male:
+            <input type="radio" name="gender" value="male" checked>
+        </span>
+        <span>Female:
+            <input type="radio" name="gender" value="female">
+        </span> <br>
+        </div>
+
+        <div class="form-group">
+        <label> Age:
+        <input type="number" id="quantity" name="age" min="18" max="40" value="27" required>
+        </div>
+
+        <input type="submit" class="btn btn-default" value="Send Form" id="submit">
+
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
