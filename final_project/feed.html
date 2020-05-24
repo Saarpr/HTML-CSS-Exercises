@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tour The Food</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/tab_icon.png" sizes="16x16" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+
+</head>
+<!-- <div class="form-group"></div> -->
+
+<body>
+    <header>
+        <section class="logo_header">
+            <a href="index.html" id="logo">
+                <div class=logo_img></div>
+                <div class=logo_text></div>
+            </a>
+        </section>
+    </header>
+    <div id="wrapper">
+        <h1 id="my_trips">My Trips</h1>
+        <section id=last_trip>
+            <a href="#" class="share"></a>
+            <span class="description">Rome<br>8 days</span>
+            <span class="trip_date">3 Weeks ago</span>
+        </section>
+
+        <section id="feed_section">
+        </section>
+
+        <section class="action_buttons">
+            <a class="search_a"href="#"><img src="images/search.svg"></a>
+            <a class="add_a"href="form.html"><img src="images/add.svg"></a>
+
+        </section>
+    </div>
+    <footer>
+        <section class="logo_header">
+            <a href="index.html" id="logo">
+              <div class=logo_img></div>
+              <div class=logo_text></div>
+            </a>
+          </section>
+    </footer>
+    <script>
+        (initialize_feed());
+
+    </script>
+
+</body>
+
+</html>

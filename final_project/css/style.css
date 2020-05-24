@@ -1,0 +1,816 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer, nav, aside, section, div  {
+  display: block;
+}
+/*---------------------------------------------------------------------*/
+main{
+  display: flex;
+  justify-content: center;
+}
+
+#wrapper{
+  margin:0px auto;
+  background: #F8F0F2 0% 0% no-repeat padding-box;
+  min-height: 800px;
+  width: 65%;
+  min-width: 700px;
+}
+
+
+header{
+  background-image: linear-gradient(270deg ,#FF4C2D, #FF416B); 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/*--------------------------------LOGO-------------------------------------*/
+.logo_header{
+  display: flex;
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+#logo{
+  position: absolute;
+  left: 18%;
+  top: 9px;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+.logo_img{
+  width: 41px;
+  height: 40px;
+  margin-right: 10px;
+  background-image: url("../images/logo-icon.svg");
+  background-repeat: no-repeat;
+}
+.logo_text{
+  width: 173px;
+  height: 23px;
+  background-image: url("../images/logo-text.svg");
+  background-repeat: no-repeat;
+
+}
+
+.photo_header{
+  background-image: url("../images/intoPhoto.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 458px;
+  position: relative;
+}
+
+.photo_header span{
+  position: absolute;
+  top: 149px;
+  left: 18%;
+  font-family: 'Cabin';
+  color: #FFFFFF;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px black;
+}
+.photo_header span{
+  font-weight:normal;
+}
+
+
+.intro{
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Cabin';
+  letter-spacing: 1.15px;
+  color:black;
+  padding-top: 55px;
+}
+.intro span{
+  font-size: 18px;
+  font-family: 'Cabin';
+  color: #FF4C2D;
+  font-weight: bold;
+}
+
+.join-us{
+  margin:0px auto;
+  width: 74%;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px #FF4C2D;
+
+}
+.join-us button{
+  margin-bottom: 50px;
+  margin-top: 30px;
+  width: 275px;
+  height: 54px;
+  background: transparent linear-gradient(256deg, #FF464F 0%, #FF416B 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 100px;
+  opacity: 1;
+  font-family: 'Cabin';
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding: 5px;
+}
+
+.pre_carousel{
+  margin: 15px;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Cabin';
+  letter-spacing: 1.15px;
+  color:black;
+  padding: 20px;
+}
+.pre_carousel h2{
+  font-size: 25px;
+  color: #FF4C2D;
+  font-weight: bold;
+}
+
+/*---------------------------------------------------------------------*/
+
+.carousel-control.left{
+  background-image: none  !important;
+
+}
+.carousel-control.right{
+  background-image: none  !important;
+
+}
+
+/*
+
+.calender {
+    width:100px;
+    height:18px;
+    background: url("../images/calender.png") no-repeat scroll 0 0;
+  }
+*/
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*-----------------------Foot by Dudi-----------------------------*/
+
+footer{
+  background-image: linear-gradient(270deg ,#FF4C2D, #FF416B); 
+  height: 70px;
+}
+
+#preFooter{
+  background-color: #FFA494;
+  width: 100%;
+  height: 330px;
+}
+#preFooterwrapper{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.preFooterContent{
+  width: 250px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph{
+  word-wrap: normal;
+  padding-top: 10px;
+  opacity: 1;
+  color: black;
+  font-size: large;
+  font-family:'Cabin';
+}
+
+.col-xs-4{
+  text-align: center;
+  font-family: 'Cabin';
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  color: white;
+  word-break: normal;
+  width: 70px;
+  font-size: large;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  display: flex;
+  color: white;
+  word-break: normal;
+  width: 70px;
+}
+.top-left p{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 2%;
+  right: 8%;
+  color: white;
+  width: 50px;
+}
+
+/*-----------------------Foot by Dudi-----------------------------*/
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+
+}
+.form-group{
+  border-bottom: solid 0.5px #FF4C2D;
+  padding-top:  15px;
+  padding-bottom: 30px;
+  
+}
+
+
+
+#datepicker {
+  width: 555px;
+}
+
+button {
+  margin: 0px auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  width: 275px;
+  height: 54px;
+  background: transparent linear-gradient(256deg, #FF464F 0%, #FF416B 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 100px;
+  border: 2px solid #FF464F;
+  transition-duration: 0.4s;
+  color: white;
+  opacity: 1;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+
+/*-----------------------Range-Start---------------------------*/
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 20px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #707070;
+  border-radius: 25px;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background:  linear-gradient(256deg, #FF464F 0%, #FF416B 100%);
+  box-shadow: 0 0 4px 0 rgba(0,0,0, 1);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #707070;
+}
+.range-wrap{
+  margin-top: 25px;
+  width: 40%;
+  position: relative;
+}
+.range-value{
+  position: absolute;
+  top: -50%;
+}
+.range-value span{
+  width: 60px;
+  height: 25px;
+  line-height: 24px;
+  text-align: center;
+  background:  linear-gradient(256deg, #FF464F 0%, #FF416B 100%);
+  color: #fff;
+  font-size: 15px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 6px;
+}
+.range-value span:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ff464f;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
+}
+/*-----------------------Range-End---------------------------*/
+
+
+/*-----------------------Radio-Start---------------------------*/
+
+#radio-flex div{
+  margin-top: 15px;
+  display: flex;
+}
+#radio-flex div label{
+  margin-right: 15px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #FF464F;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/*-----------------------Radio-End---------------------------*/
+
+/*-----------------------CheckBox-Start---------------------------*/
+
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+  padding: 0;
+}
+.styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+}
+.styled-checkbox:hover + label:before {
+  background: #FF464F;
+}
+.styled-checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.styled-checkbox:checked + label:before {
+  background: #FF464F;
+}
+.styled-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.unstyled {
+  display: flex;
+  list-style-type: none;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  border-bottom: solid #FF4C2D 0.5px ;
+}
+/*-----------------------CheckBox-End---------------------------*/
+
+/*-----------------------Select-Start---------------------------*/
+.select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+}    .select select {
+      font-family: 'Arial';
+      display: inline-block;
+      width: 40%;
+      cursor: pointer;
+      padding: 10px 15px;
+      outline: 0;
+      border: 0px solid #000000;
+      border-radius: 30px;
+      background: #e6e6e6;
+      color: #000000;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+  }
+      .select select::-ms-expand {
+          display: none;
+      }
+      .select select:hover,
+      .select select:focus {
+          color: white;
+          background:transparent linear-gradient(256deg, #FF464F 0%, #FF416B 100%) 0% 0% no-repeat padding-box;
+        }
+      .select select:disabled {
+          opacity: 0.5;
+          pointer-events: none;
+      }
+.select_arrow {
+  position: absolute;
+  top: 48%;
+  left: 34%;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0px 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+  border-top-color: white;
+}
+.select select:disabled ~ .select_arrow {
+  border-top-color: #cccccc;
+}
+
+.select{
+  border-bottom: solid #FF4C2D 0.5px ;
+  padding-bottom: 30px;
+}
+/*-----------------------Select-End---------------------------*/
+
+/*-----------------------Feed-Start---------------------------*/
+.action_buttons{
+  position: fixed;
+  left: 17%;
+  bottom:10%;
+}
+.action_buttons a img{
+  height: 40px;
+  width: 40px;
+}
+.action_buttons a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  border-radius: 50px;
+  background:transparent linear-gradient(256deg, #FF464F 0%, #FF416B 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 10px rgb(139, 139, 139);
+
+}
+#last_trip{
+margin: inherit;
+position: relative;
+background: url(../images/Rome-Roscioli_Carbonara.jpg);
+background-size: cover;
+background-position: center;
+width: 60%;
+height:300px;
+border-radius: 20px;
+box-shadow: 1px 1px 10px rgb(139, 139, 139);
+border: 1px solid #FF464F;
+margin-bottom: 4%;
+}
+#last_trip span{
+  font-family: 'Cabin';
+  color: #FFFFFF;
+  font-size: 30px;
+  text-shadow: 2px 2px 10px black;
+}
+.share{
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: url(../images/share.svg);
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height:50px;
+  border-radius: 60px;
+  box-shadow: 1px 1px 10px rgb(139, 139, 139);
+}
+.description{
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+}
+.trip_date{
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+}
+#feed_section{
+margin: 0px auto;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: 67%;
+}
+#feed_section article{
+margin: inherit;
+margin-bottom: 6%;
+position: relative;
+background-size: cover;
+background-position: center;
+width: 40%;
+height: 200px;
+border-radius: 20px;
+box-shadow: 1px 1px 10px rgb(139, 139, 139);
+border: 1px solid #FF464F;
+
+}
+#feed_section span{
+  font-family: 'Cabin';
+  color: #FFFFFF;
+  font-size: 20px;
+  text-shadow: 2px 2px 10px black;
+}
+#my_trips{
+  width: 40%;
+  margin: 0px auto;
+  font-family: 'Cabin';
+  font-size: 40px;
+  color: #FF4C2D;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+/*-----------------------Feed-End---------------------------*/
+
+/*-----------------------New_Trip-Start---------------------------*/
+.Restaurants-Card{
+  display: flex;
+  width: 600px;
+  margin: 30px;
+  background-color: white;
+  border-radius: 20px; 
+  box-shadow: 1px 1px 10px rgb(139, 139, 139);
+
+  /* border: #FF4C2D solid 2px;  */
+}
+
+#Cards_Control{
+  display: flex;
+  flex-direction: column;
+}
+.Restaurants-Card p{
+  margin-top: 17px;
+  word-wrap: normal;
+  padding-top: 10px;
+  opacity: 1;
+  color: black;
+  font-size: large;
+  font-family:'Cabin';
+
+}
+.Restaurants-Card img{
+  float: left;
+  margin-right: 10px;
+}
+#NewTripTytle{
+  padding: 30px;
+  text-align: center;
+  font-family: 'Cabin';
+  color: #FF4C2D;
+}
+#add_trip{
+  margin: 0px auto;
+}
+
+#carouselExampleIndicators{
+  margin: 0px auto;
+  width: 50%;
+  padding-bottom: 40px;
+}
+
+
+
+/*-----------------------New_Trip-End---------------------------*/
+@media (max-width: 800px) {
+#wrapper{
+  min-width: 100%;
+  min-height: 600px;
+  }
+#preFooter{
+  display: none;
+  }
+.container{
+  min-width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#logo{
+  left: 3%;
+  margin-top: 3px;
+}
+.logo_img{
+  margin-top: 5px;
+  width: 31px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+.logo_text{
+  height: 23px;
+  background-size: auto;
+}
+
+.select_arrow {
+  left: 30%;
+}
+/*-----------------------Feed-Start---------------------------*/
+.action_buttons{
+  left: -8px;
+  bottom:65px;
+}
+.action_buttons a img{
+  height: 20px;
+  width: 20px;
+}
+.action_buttons a{
+  height: 40px;
+  width: 40px;
+  margin: 20px;
+  border: solid 1px white;
+}
+
+#last_trip{
+width: 95%;
+height:200px;
+border-radius: 10px;
+margin-bottom: 4%;
+}
+#last_trip span{
+  font-size: 20px;
+}
+.share{
+display: none;
+}
+.description{
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+}
+.trip_date{
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+}
+#feed_section{
+margin: 0px auto;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: 100%;
+}
+#feed_section article{
+width: 43%;
+height: 100px;
+border-radius: 10px;
+}
+#feed_section span{
+  font-size: 15px; 
+}
+#my_trips{
+  width: 100%;
+  font-size: 30px;
+}
+/*-----------------------Feed-End---------------------------*/
+
+form{
+  font-family: 'Cabin';
+  width: 99%;
+}
+#datepicker{
+  width: 100%;
+}
+/*-----------------------New_Trip-Start---------------------------*/
+.Restaurants-Card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+#Cards_Control{
+width: 300px;
+margin:0px auto;
+}
+.Restaurants-Card p{
+  margin-top: 5px;
+  padding-top: 0px;
+  margin-left: 5px;
+}
+.Restaurants-Card img{
+  float: none;
+  margin-right: 0px;
+}
+/*-----------------------New_Trip-End---------------------------*/
+
+.photo_header{
+  height: 300px;
+}
+.photo_header span{
+  top: 80px;
+  left: 4%;
+  font-size: 30px;
+}
+.top-left img{
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 40px;
+  height: 40px;
+}
+.top-left p{
+  display: none;
+}
+.col-md-12{
+  display: none;
+}
+}
+
+
+@media (min-width: 800px){
+  #carouselExampleIndicators{
+    display: none;
+  }  
+}
