@@ -1,0 +1,39 @@
+{
+  "photos": {
+    "italy": {
+      "img1": "/media/food_images/italy1.jpg",
+      "img2": "/media/food_images/italy2.jpg",
+      "img3": "/media/food_images/italy3.jpg"
+    },
+    "israel": {
+      "img1": "/media/food_images/israel1.jpg",
+      "img2": "/media/food_images/israel2.jpg",
+      "img3": "/media/food_images/israel3.jpg"
+    },
+    "england": {
+      "img1": "/media/food_images/eng1.jpg",
+      "img2": "/media/food_images/eng2.jpg",
+      "img3": "/media/food_images/eng3.jpg"
+    },
+    "thailand": {
+      "img1": "/media/food_images/thai1.jpg",
+      "img2": "/media/food_images/thai2.jpg",
+      "img3": "/media/food_images/thai3.jpg"
+    },
+    "france": {
+      "img1": "/media/food_images/france1.jpg",
+      "img2": "/media/food_images/france2.jpg",
+      "img3": "/media/food_images/france3.jpg"
+    },
+    "us": {
+      "img1": "/media/food_images/us1.jpg",
+      "img2": "/media/food_images/us2.jpg",
+      "img3": "/media/food_images/us3.jpg"
+    },
+    "india": {
+      "img1": "/media/food_images/india1.jpg",
+      "img2": "/media/food_images/india2.jpg",
+      "img3": "/media/food_images/india3.jpg"
+    }
+  }
+}

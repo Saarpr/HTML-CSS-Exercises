@@ -24,9 +24,9 @@ var users = ["Saar P", "David T", "Ruti K", "Noy D", "Or P", "Tehila L"];
 function initialize_select() {
   var select_usr = "";
   for (i = 0; i < users.length; i++) {
-    select_usr += "<option class=\"form-control\"value=\"" + users[i] + "\">" + users[i] + "</option>"
+    select_usr += "<option class=\"form-control\"value=\" "+ users[i] +" \">" + users[i] + "</option>"
   }
-  var select = document.getElementById("select_users");
+    var select = document.getElementById("select_users");
 
   select.innerHTML = select_usr;
 }
@@ -88,6 +88,10 @@ function initialize_trip() {
   breakFast.innerHTML = New_trip;
 }
 
+$("button").click(function(){
+  $("p").css("color", "red");
+});
+
 function initialize_feed() {
   var feed_artic = "";
   for (i = 1; i < MyTrips.length; i++) {
@@ -96,4 +100,29 @@ function initialize_feed() {
   var select = document.getElementById("feed_section");
 
   select.innerHTML = feed_artic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById("bla").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("bla").innerHTML = "YOU CLICKED ME!";
 }

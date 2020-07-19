@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tour The Food</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="{% static 'landing/js/main.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'landing/css/style.css' %}">
+    <link rel="icon" href="images/tab_icon.png" sizes="16x16" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+    <script src="{% static 'landing/js/json.js' %}"></script>
+</head>
+<!-- <div class="form-group"></div> -->
+
+<body>
+<header>
+    <section class="logo_header">
+        <a href="{% url 'feed' %}" id="logo">
+            <div class=logo_img></div>
+            <div class=logo_text></div>
+        </a>
+    </section>
+    <div class="media" id="trip_detail_header">
+        <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+        <div class="media_body">
+            <h4 class="account-heading">{{ user.username }}</h4>
+            <a class="btn_logout" href="{% url 'logout' %}">Logout</a>
+        </div>
+    </div>
+</header>
+<div id="wrapper">
+    <div class="media-content-section">
+        <div class="article-metadata">
+            <h1 class="article-title">Your Trip To {{ object.where }}</h1>
+            <h3>From: {{ object.start_date|date:"F d, Y" }}</h3>
+            <h3>To: {{ object.end_date|date:"F d, Y" }}</h3>
+            <h3 id="budget">Budget: </h3>
+            {% if object.user == user %}
+                <div class="crud_wrap">
+                    <a class="btn btn-secondary btn-sm mt-1 mb-1" id="crud_btn2"
+                       href="{% url 'trip-update' object.trip_id %}">Update</a>
+                    <a class="btn btn-danger btn-sm mt-1 mb-1" id="crud_btn"
+                       href="{% url 'trip-delete' object.trip_id %}">Delete</a>
+
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+    <div id="details_lowerPage">
+        <div>
+            <h3 id="detail_h3">From Our community</h3>
+            <p id="detail_par">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam massa augue, hendrerit et vehicula nec,
+                varius sit amet est. Pellentesque pharetra, neque ac gravida porttitor, elit nibh tempor dolor, egestas
+                malesuada nulla elit iaculis justo. Nunc tristique lobortis dolor, at condimentum enim tempus eu. Nullam
+                ac
+                libero nec dui pretium consectetur. Nullam pharetra convallis neque eu efficitur. Nulla quis tellus non
+                nisl
+                faucibus pulvinar. Maecenas lobortis nunc ac urna imperdiet fermentum. Nam vehicula turpis id metus
+                bibendum
+                auctor. Vestibulum elementum id lectus in bibendum. Proin fringilla, diam id ullamcorper eleifend, purus
+                mauris elementum est, quis convallis massa ligula sed orci
+            </p>
+        </div>
+        <div>
+            <img id="rand-img" src="/media/food_images/{{ object.where }}1.jpg">
+        </div>
+
+    </div>
+    <a class="btn btn-secondary btn-sm mt-1 mb-1" id="crud_btn1" href="{% url 'feed' %}">Back To Trips</a>
+
+</div>
+<footer id="feed_footer">
+    <section class="logo_header">
+        <a href="{% url 'feed' %}" id="logo">
+            <div class=logo_img></div>
+            <div class=logo_text></div>
+        </a>
+    </section>
+</footer>
+<script>
+
+    (random_trip_photo("{{ object.where }}"));
+    (show_budget("{{ object.budget}}"));
+
+</script>
+</body>
+
+</html>
