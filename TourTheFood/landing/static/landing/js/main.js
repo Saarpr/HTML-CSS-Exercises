@@ -38,7 +38,6 @@ function initialize_select(usr) {
 
     myDjangoList = myDjangoList.replace(/u'/g, '\'')
     myDjangoList = myDjangoList.replace(/'/g, '\"')
-    // console.log(myDjangoList);
 
     myData = JSON.parse(myDjangoList);
     var select_usr = "<option class=\"form-control\"value=\"By Myself\"selected>Myself</option>";

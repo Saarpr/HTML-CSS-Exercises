@@ -1,11 +1,8 @@
 function random_trip_photo(trip) {
-    console.log(trip);
 
     $.getJSON("/static/landing/json/data.json", function (data) {
-        console.log(data);
         trip = trip.toLowerCase();
         var phase1 = data.photos[trip];
-        console.log(phase1);
         var rnd_num = Math.floor(Math.random() * 3) + 1;
         var str = "img" + rnd_num;
         if (phase1) {
@@ -20,7 +17,6 @@ function random_trip_photo(trip) {
 
 
 function random_img(trip) {
-    // console.log(trip);
     var myDjangoList = ((trip.replace(/&(l|g|quo)t;/g, function (a, b) {
         return {
             l: '<',
@@ -30,16 +26,13 @@ function random_img(trip) {
     })));
     myDjangoList = myDjangoList.replace(/u'/g, '\'')
     myDjangoList = myDjangoList.replace(/'/g, '\"')
-    // console.log(myDjangoList);
     myData = JSON.parse(myDjangoList);
-    console.log(myData);
     $.getJSON("/static/landing/json/data.json", function (data) {
 
         for (i = 0; i < myData.length; i++) {
             var tmp = myData[i].fields.where;
             tmp = tmp.toLowerCase();
             var trip_id = myData[i].pk;
-            console.log(trip_id);
             var rnd_num = Math.floor(Math.random() * 3) + 1;
             var str = "img" + rnd_num;
             var phase1 = data.photos[tmp];
